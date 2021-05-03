@@ -9,18 +9,6 @@ export function collectTextNodes() {
   return r;
 }
 
-function lookupWord(word) {
-  const stem = word2stem[word.toLowerCase()];
-  if (!stem) {
-    return "";
-  }
-  const meaning = dic[stem];
-  if (!meaning) {
-    return "";
-  }
-  return meaning;
-}
-
 export function processNode(node) {
   const fragment = document.createDocumentFragment();
   const words = node.textContent.split(/\s+/);
