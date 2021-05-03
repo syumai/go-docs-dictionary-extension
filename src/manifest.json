@@ -11,8 +11,8 @@
   "content_scripts": [
     {
       "matches": ["https://golang.org/ref/spec"],
-      "js": ["dict.js"],
-      "css": ["dict.css"]
+      "js": ["app.js"],
+      "css": ["app.css"]
     }
   ]
 }
