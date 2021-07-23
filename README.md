@@ -9,7 +9,7 @@ WIP
   - [x] [Go Blog](https://blog.golang.org/)
   - [x] [Documentation](https://golang.org/doc/)
   - [x] [Design Docs](https://go.googlesource.com/proposal/+/refs/heads/master/design/)
-  - [ ] [Go Wiki](https://github.com/golang/go/wiki)
+  - [x] [Go Wiki](https://github.com/golang/go/wiki)
 - [ ] Automatically update translation resources
 - [ ] Multiple languages support
 

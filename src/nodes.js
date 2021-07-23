@@ -49,16 +49,5 @@ function processNode(node) {
   if (fragment.children.length > 0 && fragment.lastChild.textContent === " ") {
     fragment.removeChild(fragment.lastChild);
   }
-  // workaround to avoid making h2 > pre and h3 > pre
-  // if (node.parentNode.nodeName == "H2" || node.parentNode.nodeName == "H3") {
-  // wrap by div
-  /*
-  const div = document.createElement("div");
-  div.className = "word-container";
-  div.appendChild(fragment);
-  node.parentNode.replaceChild(div, node);
-  */
-  //  } else {
   node.parentNode.replaceChild(fragment, node);
-  // }
 }
