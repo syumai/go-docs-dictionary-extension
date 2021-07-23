@@ -1,9 +1,17 @@
 .word {
+  display: contents;
+}
+
+.word-with-meaning {
   position: relative;
 }
 
-.word:hover {
+.word-with-meaning:hover {
   background-color: #e0e8ff;
+}
+
+.word-container {
+  display: contents;
 }
 
 .word-translation {
@@ -22,6 +30,6 @@
   box-shadow: 1px 1px #ccc
 }
 
-.word:hover .word-translation {
+.word-with-meaning:hover .word-translation {
   display: block;
 }

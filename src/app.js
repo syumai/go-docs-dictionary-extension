@@ -46,9 +46,10 @@ function processNode(node) {
   const fragment = document.createDocumentFragment();
   const words = node.textContent.split(/\s+/);
   words.forEach((word) => {
-    const span = document.createElement("span");
-    span.textContent = word;
-    fragment.appendChild(span);
+    const div = document.createElement("div");
+    div.textContent = word;
+    div.className = "word";
+    fragment.appendChild(div);
     fragment.appendChild(document.createTextNode(" "));
 
     const trimmedWord = word.replace(/['",.:;]/g, "");
@@ -56,22 +57,25 @@ function processNode(node) {
     if (!meaning) {
       return;
     }
-    span.className = "word";
+    div.classList.add("word-with-meaning");
     const tooltip = document.createElement("div");
     tooltip.textContent = meaning;
     tooltip.className = "word-translation";
-    span.appendChild(tooltip);
+    div.appendChild(tooltip);
   });
   if (fragment.children.length > 0 && fragment.lastChild.textContent === " ") {
     fragment.removeChild(fragment.lastChild);
   }
   // workaround to avoid making h2 > pre and h3 > pre
-  if (node.parentNode.nodeName == "H2" || node.parentNode.nodeName == "H3") {
-    // wrap by div
-    const div = document.createElement("div");
-    div.appendChild(fragment);
-    node.parentNode.replaceChild(div, node);
-  } else {
-    node.parentNode.replaceChild(fragment, node);
-  }
+  // if (node.parentNode.nodeName == "H2" || node.parentNode.nodeName == "H3") {
+  // wrap by div
+  /*
+  const div = document.createElement("div");
+  div.className = "word-container";
+  div.appendChild(fragment);
+  node.parentNode.replaceChild(div, node);
+  */
+  //  } else {
+  node.parentNode.replaceChild(fragment, node);
+  // } 
 }
