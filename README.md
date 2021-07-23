@@ -2,6 +2,7 @@
 
 - This is a Chrome extension to add dictionary to Go's official documents.
 - Currently, only Japanese is supported.
+
 ![screenshot](./images/screenshot.png)
 
 ## Features
