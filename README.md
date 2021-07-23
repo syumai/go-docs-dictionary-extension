@@ -1,6 +1,7 @@
 # Go Language Specification Dictionary Extension
 
-WIP
+- This is a Chrome extension to add dictionary to Go's official documents.
+![screenshot](./images/screenshot.png)
 
 ## Features
 
@@ -13,3 +14,8 @@ WIP
 - [x] Automatically update translation resources
 - [ ] Multiple languages support
 
+## License
+
+MIT
+
+This project is based on [gospec](https://github.com/DQNEO/gospec) and [gospec-analyzer](https://github.com/DQNEO/gospec-analyzer) by @DQNEO.
