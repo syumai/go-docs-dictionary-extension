@@ -1,4 +1,4 @@
-export const word2stem = {
+const word2stem = {
   absent: "absent",
   accent: "accent",
   accented: "accented",

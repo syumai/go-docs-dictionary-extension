@@ -1,4 +1,4 @@
-export const dic = {
+const dic = {
   EN: "JA",
   FALSE: "",
   TRUE: "",
