@@ -1,6 +1,3 @@
-import { dic as localDic } from "./dic.ja.js";
-import { word2stem as localWord2stem } from "./word2stem.js";
-
 async function fetchLatestDic() {
   try {
     const res = await fetch(
@@ -62,8 +59,8 @@ async function loadDictionaryData() {
   };
 }
 
-export class Dictionary {
-  async constructor() {
+class Dictionary {
+  async init() {
     const { dic, word2stem } = await loadDictionaryData();
     this.dic = dic;
     this.word2stem = word2stem;

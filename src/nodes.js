@@ -13,19 +13,7 @@ function collectTextNodes(containerEl) {
   return r;
 }
 
-function lookupWord(word) {
-  const stem = word2stem[word.toLowerCase()];
-  if (!stem) {
-    return "";
-  }
-  const meaning = dic[stem];
-  if (!meaning) {
-    return "";
-  }
-  return meaning;
-}
-
-function processNode(node) {
+function processNode(node, dict) {
   const fragment = document.createDocumentFragment();
   const words = node.textContent.split(/\s+/);
   words.forEach((word) => {
@@ -36,7 +24,7 @@ function processNode(node) {
     fragment.appendChild(document.createTextNode(" "));
 
     const trimmedWord = word.replace(/['",.:;]/g, "");
-    const meaning = lookupWord(trimmedWord);
+    const meaning = dict.lookup(trimmedWord);
     if (!meaning) {
       return;
     }
