@@ -37,8 +37,8 @@ async function loadDictionaryData() {
   // load latest dictionary
   try {
     const [dic, word2stem] = await Promise.all([
-      fetchLatestDic,
-      fetchLatestWord2Stem,
+      fetchLatestDic(),
+      fetchLatestWord2Stem(),
     ]);
     cacheDictionaryData(dic, word2stem);
     return { dic, word2stem };
@@ -52,11 +52,7 @@ async function loadDictionaryData() {
     return cache;
   }
 
-  // load local dictionary
-  return {
-    dic: localDic,
-    word2stem: localWord2stem,
-  };
+  throw new Error("failed to load dictionary");
 }
 
 class Dictionary {

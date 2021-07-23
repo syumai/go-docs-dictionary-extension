@@ -11,18 +11,21 @@
   "content_scripts": [
     {
       "matches": ["https://golang.org/*", "https://blog.golang.org/*"],
-      "js": ["word2stem.js", "dic.ja.js", "dictionary.js", "nodes.js", "golang.org/app.js"],
+      "js": ["dictionary.js", "nodes.js", "golang.org/app.js"],
       "css": ["app.css"]
     },
     {
       "matches": ["https://go.googlesource.com/proposal/+/refs/heads/master/design/*"],
-      "js": ["word2stem.js", "dic.ja.js", "dictionary.js", "nodes.js", "go.googlesource.com/app.js"],
+      "js": ["dictionary.js", "nodes.js", "go.googlesource.com/app.js"],
       "css": ["app.css"]
     },
     {
       "matches": ["https://github.com/golang/go/wiki", "https://github.com/golang/go/wiki/*"],
-      "js": ["word2stem.js", "dic.ja.js", "dictionary.js", "nodes.js", "github.com/app.js"],
+      "js": ["dictionary.js", "nodes.js", "github.com/app.js"],
       "css": ["app.css"]
     }
+  ],
+  "permissions": [
+    "storage"
   ]
 }

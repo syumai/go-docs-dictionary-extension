@@ -10,11 +10,6 @@ WIP
   - [x] [Documentation](https://golang.org/doc/)
   - [x] [Design Docs](https://go.googlesource.com/proposal/+/refs/heads/master/design/)
   - [x] [Go Wiki](https://github.com/golang/go/wiki)
-- [ ] Automatically update translation resources
+- [x] Automatically update translation resources
 - [ ] Multiple languages support
 
-## ToDo
-
-- [ ] Run extension in Go Spec
-- [ ] Run extension in Proposals (Draft)
-- [ ] Automatically update translation resources
