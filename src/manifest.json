@@ -13,6 +13,10 @@
       "matches": ["https://golang.org/*", "https://blog.golang.org/*"],
       "js": ["word2stem.js", "dic.ja.js", "app.js"],
       "css": ["app.css"]
+    },     {
+      "matches": [ "https://go.googlesource.com/proposal/+/refs/heads/master/design/*"],
+      "js": ["word2stem.js", "dic.ja.js", "app.js"],
+      "css": ["app.css"]
     }
   ]
 }
