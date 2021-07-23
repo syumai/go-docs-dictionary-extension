@@ -5,6 +5,8 @@
 
 ![screenshot](./images/screenshot.png)
 
+This project is based on [gospec](https://github.com/DQNEO/gospec) and [gospec-analyzer](https://github.com/DQNEO/gospec-analyzer) by [@DQNEO](https://github.com/DQNEO).
+
 ## Features
 
 - Add dictionary to Go's official documents
@@ -20,4 +22,3 @@
 
 MIT
 
-This project is based on [gospec](https://github.com/DQNEO/gospec) and [gospec-analyzer](https://github.com/DQNEO/gospec-analyzer) by @DQNEO.
