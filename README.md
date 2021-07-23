@@ -1,4 +1,4 @@
-# Go Language Specification Dictionary Extension
+# Dictionary Extension for Go's Documents
 
 - This is a Chrome extension to add dictionary to Go's official documents.
 ![screenshot](./images/screenshot.png)
