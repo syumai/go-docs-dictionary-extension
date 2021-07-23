@@ -11,11 +11,11 @@
   "content_scripts": [
     {
       "matches": ["https://golang.org/*", "https://blog.golang.org/*"],
-      "js": ["word2stem.js", "dic.ja.js", "app.js"],
+      "js": ["word2stem.js", "dic.ja.js", "nodes.js", "golang.org/app.js"],
       "css": ["app.css"]
     },     {
       "matches": [ "https://go.googlesource.com/proposal/+/refs/heads/master/design/*"],
-      "js": ["word2stem.js", "dic.ja.js", "app.js"],
+      "js": ["word2stem.js", "dic.ja.js", "nodes.js", "go.googlesource.com/app.js"],
       "css": ["app.css"]
     }
   ]

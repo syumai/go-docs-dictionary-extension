@@ -7,8 +7,8 @@ WIP
 - Add dictionary to Go's official documents
   - [x] [Go Spec](https://golang.org/ref/spec)
   - [x] [Go Blog](https://blog.golang.org/)
-  - [ ] [Documentation](https://golang.org/doc/)
-  - [ ] Proposals (Draft)
+  - [x] [Documentation](https://golang.org/doc/)
+  - [x] [Design Docs](https://go.googlesource.com/proposal/+/refs/heads/master/design/)
   - [ ] [Go Wiki](https://github.com/golang/go/wiki)
 - [ ] Automatically update translation resources
 - [ ] Multiple languages support

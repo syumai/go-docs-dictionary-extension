@@ -1,25 +1,8 @@
-window.onload = () => {
-  console.log("window loaded");
-  main();
-};
-
-function main() {
-  const nodesToIgnore = new Set(["PRE"]);
-  const textNodes = collectTextNodes();
-  for (const node of textNodes) {
-    if (nodesToIgnore.has(node.parentNode.nodeName)) {
-      continue;
-    }
-    processNode(node);
-  }
-}
-
-function collectTextNodes() {
-  const container = document.querySelector(".container");
+function collectTextNodes(containerEl) {
   const r = [];
   let n;
   const walker = document.createTreeWalker(
-    container,
+    containerEl,
     NodeFilter.SHOW_TEXT,
     null,
     false
@@ -77,5 +60,5 @@ function processNode(node) {
   */
   //  } else {
   node.parentNode.replaceChild(fragment, node);
-  // } 
+  // }
 }
