@@ -2,3 +2,19 @@
 
 WIP
 
+## Features
+
+- Add dictionary to Go's official documents
+  - [ ] [Go Spec](https://golang.org/ref/spec)
+  - [ ] [Go Blog](https://blog.golang.org/)
+  - [ ] [Documentation](https://golang.org/doc/)
+  - [ ] Proposals (Draft)
+  - [ ] [Go Wiki](https://github.com/golang/go/wiki)
+- [ ] Automatically update translation resources
+- [ ] Multiple languages support
+
+## ToDo
+
+- [ ] Run extension in Go Spec
+- [ ] Run extension in Proposals (Draft)
+- [ ] Automatically update translation resources

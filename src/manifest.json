@@ -1,7 +1,7 @@
 {
   "name": "Go Language Specification Dictionary Extension",
   "version": "0.1.0",
-  "manifest_version": 1,
+  "manifest_version": 3,
   "description": "Go Language Specification Dictionary Extension",
   "icons": {
     "16": "icons/go-icon-16.png",
