@@ -1,5 +1,5 @@
 .word {
-  display: contents;
+  display: initial;
 }
 
 .word-with-meaning {
