@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://golang.org/*", "https://blog.golang.org/*"],
+      "matches": ["https://golang.org/*", "https://blog.golang.org/*", "https://gospec-previewer.vercel.app/*"],
       "js": ["dictionary.js", "nodes.js", "golang.org/app.js"],
       "css": ["app.css"]
     },
