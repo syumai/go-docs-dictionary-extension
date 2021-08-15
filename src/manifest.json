@@ -1,6 +1,6 @@
 {
   "name": "Dictionary Extension for Go Documents",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "manifest_version": 3,
   "description": "Dictionary Extension for Go Documents",
   "icons": {
