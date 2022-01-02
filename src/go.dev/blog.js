@@ -1,6 +1,6 @@
 async function main() {
   const nodesToIgnore = new Set(["PRE"]);
-  const containerEl = document.querySelector(".container");
+  const containerEl = document.getElementById("blog");
   const textNodes = collectTextNodes(containerEl);
   const dict = new Dictionary();
   await dict.init();
