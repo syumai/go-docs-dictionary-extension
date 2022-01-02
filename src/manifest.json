@@ -1,6 +1,6 @@
 {
   "name": "Dictionary Extension for Go Documents",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "manifest_version": 3,
   "description": "Dictionary Extension for Go Documents",
   "icons": {
@@ -10,8 +10,13 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://golang.org/*", "https://blog.golang.org/*", "https://gospec-previewer.vercel.app/*"],
-      "js": ["dictionary.js", "nodes.js", "golang.org/app.js"],
+      "matches": ["https://go.dev/doc/*", "https://go.dev/ref/*", "https://tip.golang.org/doc/*", "https://tip.golang.org/ref/*", "https://gospec-previewer.vercel.app/*"],
+      "js": ["dictionary.js", "nodes.js", "go.dev/doc.js"],
+      "css": ["app.css"]
+    },
+    {
+      "matches": ["https://go.dev/blog/*"],
+      "js": ["dictionary.js", "nodes.js", "go.dev/blog.js"],
       "css": ["app.css"]
     },
     {
